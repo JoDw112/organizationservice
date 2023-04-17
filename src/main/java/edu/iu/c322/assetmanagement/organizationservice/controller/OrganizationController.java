@@ -19,7 +19,7 @@ public class OrganizationController {
     }
 
     @GetMapping
-    public List<Organization> getOrganization(){
+    public List<Organization> getOrganizations(){
         return repository.findAll();
     }
 
