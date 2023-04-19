@@ -36,4 +36,9 @@ public class OrganizationController {
         Organization addedOrganization = repository.save(organization);
         return addedOrganization.getId();
     }
+
+    @PutMapping
+    public void update(@RequestBody Organization organization){
+        Organization addedOrganization = repository.save(organization);
+    }
 }
